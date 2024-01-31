@@ -28,4 +28,7 @@ def test_create_task():
     assert data_get_task_id_response['user_id'] == payload['user_id']
 
 def test_update_task():
+    # crete a task
+    # update the task
+    # get and validate the changes
     pass
