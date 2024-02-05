@@ -32,3 +32,9 @@ def test_update_task():
     # update the task
     # get and validate the changes
     pass
+
+def create_task(payload):
+    return requests.put(ENDPOINT + "/create-task", json=payload)
+
+def get_task(task_id):
+    return requests.get(ENDPOINT + f"/get-task/{task_id}")
